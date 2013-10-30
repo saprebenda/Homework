@@ -1,0 +1,6 @@
+homeworkspcis196.herokuapp.com
+Schema (implement for Users new and index)
+
+Added a string of validations (no pun intended).
+
+Wrote code for a proper navigation bar drawing on js and css from stylesheets. Added an image for users (blank, but will update).
