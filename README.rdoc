@@ -1,6 +1,5 @@
-homeworkspcis196.herokuapp.com
-Schema (implement for Users new and index)
+http://damp-basin-3806.herokuapp.com/
 
-Added a string of validations (no pun intended).
+Added the Devise (authenticate) gem
 
-Wrote code for a proper navigation bar drawing on js and css from stylesheets. Added an image for users (blank, but will update).
+Created the new heroku app (above)
