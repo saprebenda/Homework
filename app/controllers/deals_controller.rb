@@ -34,7 +34,7 @@ class DealsController < ApplicationController
 
   def index
     if user_signed_in?
-      @deals = Deal.where(user_id: current_user)
+      @deals = Deal.where(User_id: current_user)
     else
       @deals = []
     end
