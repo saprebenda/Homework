@@ -1,18 +1,22 @@
 class DealsController < ApplicationController
   def new
     @deal = Deal.new
+    if !user_signed_in?
+      redirect_to new_user_session_path
+    end
   end
 
   def create
   	@deal = Deal.new(params[:deal])
-  	  if(@deal.user_id !=current_user.id)
+	  if(@deal.User_id !=current_user.id)
       redirect_to root_path
     else
       if @deal.save
-  		redirect_to deals_path
-  	else
-  		render 'new'
-  	end
+		    redirect_to deals_path
+      else
+		    render 'new'
+      end
+    end
   end
 
   def edit
@@ -46,4 +50,3 @@ class DealsController < ApplicationController
       @deal = Deal.find(params[:id])
   end
 end
-
