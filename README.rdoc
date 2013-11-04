@@ -3,3 +3,6 @@ http://damp-basin-3806.herokuapp.com/
 Added the Devise (authenticate) gem
 
 Created the new heroku app (above)
+
+Added NewRelic Heroku addon
+(planning to add the Send Grid addon for final)

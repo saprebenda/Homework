@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'newrelic_rpm'
+
 gem 'devise', '3.0'
 
 gem 'rails', '3.2.13'
