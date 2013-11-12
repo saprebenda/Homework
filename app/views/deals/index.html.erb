@@ -5,7 +5,7 @@
 		<td>user</td>
 	</tr>
 
-<% @deals_high.each do |deal| %>
+<% @deals.each do |deal| %>
 	<tr>
 		<td><%= deal.Object_Name %></td>
 		<td><%= deal.Price %></td>
@@ -16,7 +16,7 @@
 	</tr>
 <% end %>
 
-<% @deals_med.each do |deal| %>
+<% @deals.each do |deal| %>
 	<tr>
 		<td><%= deal.Object_Name %></td>
 		<td><%= deal.Price %></td>
@@ -27,7 +27,7 @@
 	</tr>
 <% end %>
 
-<% @deals_low.each do |deal| %>
+<% @deals.each do |deal| %>
 	<tr>
 		<td><%= deal.Object_Name %></td>
 		<td><%= deal.Price %></td>
