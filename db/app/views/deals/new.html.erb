@@ -1,0 +1,19 @@
+<%= form_for(@deal) do |f| %>
+	<div class="field">
+		<p>Object Name</p>
+		<%= f.text_field :Object_Name %>
+	</div>
+
+	<div class="field">
+		<p>Price</p>
+		<%= f.text_field :Price %>
+	</div>
+
+	<div class="field">
+		<%= f.hidden_field :User_id, :value => current_user.id%>
+	</div>
+
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+<% end %>

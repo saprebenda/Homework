@@ -1,0 +1,57 @@
+<table>
+	<tr>
+		<td>deal</td>
+		<td>price</td>
+		<td>user</td>
+	</tr>
+<% @deals.each do |deal| %>
+	<tr>
+		<td><%= deal.Object_Name %></td>
+		<td><%= deal.Price %></td>
+		<td><%= deal.User.name %></td>
+		<td><%= link_to "show deal", deal_path(deal.id) %></td>
+		<td><%= link_to "edit deal", edit_deal_path(deal.id) %></td>
+		<td><%= link_to "delete deal", deal, confirm: "You are about to delete this deal. Are you sure you want to do this?", method: :delete %></td>
+	</tr>
+
+<% @deals.high_priority.each do |deal| %>
+	<tr>
+		<td><%=deal.title %></td>
+		<td><%=deal.priority %></td>
+		<td><%=deal.description %></td>
+		<td><%=deal.completed %></td>
+		<td><%=deal.Deals.title %></td>
+		<td><%=link_to 'Show', todo %></td>
+		<td><%=link_to 'Edit', edit_deal_path(deal) %></td>
+		<td><%=link_to 'Destroy', deal,method: :delete, data: { confirm: 'are you sure?' } %></td>
+	</tr>
+<% end %>
+
+<% @deals.med_priority.each do |deal| %>
+	<tr>
+		<td><%=deal.title %></td>
+		<td><%=deal.priority %></td>
+		<td><%=deal.description %></td>
+		<td><%=deal.completed %></td>
+		<td><%=deal.Deals.title %></td>
+		<td><%=link_to'Show',todo %></td>
+		<td><%=link_to'Edit',edit_deal_path(deal) %></td>
+		<td><%=link_to'Destroy',deal, method: :delete, data: { confirm: 'are you sure?' } %></td>
+	</tr>
+<% end %>
+
+<% @deals.low_priority.each do |deal| %>
+	<tr>
+		<td><%=deal.title %></td>
+		<td><%=deal.priority %></td>
+		<td><%=deal.description %></td>
+		<td><%=deal.completed %></td>
+		<td><%=deal.Deals.title %></td>
+		<td><%=link_to'Show',todo %></td>
+		<td><%=link_to'Edit',edit_deal_path(deal) %></td>
+		<td><%=link_to 'Destroy',deal,method: :delete, data: { confirm:'are you sure?' } %></td>
+	</tr>
+<% end %>
+
+<% end %>
+</table>
