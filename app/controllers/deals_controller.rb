@@ -37,7 +37,6 @@ class DealsController < ApplicationController
       @deals_high = Deal.high_price
       @deals_med = Deal.med_price
       @deals_low = Deal.low_price
-      @deals = Deal.all
     else
       @deals = []
     end
