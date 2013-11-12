@@ -34,7 +34,10 @@ class DealsController < ApplicationController
 
   def index
     if user_signed_in?
-      @deals = Deal.where(User_id: current_user)
+      @deals_high = Deal.high_price
+      @deals_med = Deal.med_price
+      @deals_low = Deal.low_price
+      @deals = Deal.all
     else
       @deals = []
     end
