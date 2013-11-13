@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(:version => 20131030213900) do
 
   create_table "deals", :force => true do |t|
     t.string   "Object_Name"
-    t.integer  "price"
+    t.integer  "Price"
     t.integer  "User_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
