@@ -10,7 +10,7 @@
 		<td class="high"><%= deal.Object_Name %></td>
 		<td><%= deal.price %></td>
 		<td><%= deal.User.name %></td>
-		<td><%=link_to "show deal", deal_path(deal.id) %></td>
+		<td><%= link_to "show deal", deal_path(deal.id) %></td>
 		<td><%= link_to "edit deal", edit_deal_path(deal.id) %></td>
 		<td><%= link_to "delete deal", deal, confirm: "You are about to delete this deal. Are you sure you want to do this?", method: :delete %></td>
 	</tr>
