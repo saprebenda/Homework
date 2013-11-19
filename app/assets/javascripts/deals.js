@@ -5,7 +5,7 @@ $(function(){
 		$(".high").css("background-color","");
 	});	
 	$(".med").hover(function(e){
-		$(e.target).closest(".med").css("background-color","blue");
+		$(e.target).closest(".med").css("background-color","yellow");
 	}, function(){
 		$(".med").css("background-color","");
 	});	
