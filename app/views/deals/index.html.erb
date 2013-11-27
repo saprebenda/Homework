@@ -1,40 +1,42 @@
+<body>
 <table>
 	<tr>
-		<td>Deal</td>
-		<td>Price</td>
-		<td>User</td>
+		<td style="font-size:20px; position:relative; left:10%; text-decoration: underline">Deal<span class="Deals"></span></td>
+		<td style="font-size:20px; position:relative; left:30%; text-decoration: underline">Price($)</td>
+		<td style="font-size:20px; position:relative; left: 50%; text-decoration: underline">User</td>
 	</tr>
 
 <% @deals_high.each do |deal| %>
 	<tr>
-		<td class="high"><%= deal.Object_Name %></td>
-		<td class="high"><%= deal.price %></td>
-		<td class="high"><%= deal.User.name %></td>
-		<td><%= link_to "show deal", deal_path(deal.id) %></td>
-		<td><%= link_to "edit deal", edit_deal_path(deal.id) %></td>
-		<td><%= link_to "delete deal", deal, confirm: "You are about to delete this deal. Are you sure you want to do this?", method: :delete %></td>
+		<td class="high" style="position:relative; left: 10%"><%= deal.Object_Name %></td>
+		<td class="high" style="position:relative; left: 30%"><%= deal.price %></td>
+		<td class="high" style="position:relative; left: 50%"><%= deal.User.name %></td>
+		<td style="position:relative; left: 65%"><%= button_to "show deal",deal_path(deal.id) %></td>
+		<td style="position:relative; left: 75%"><%= button_to "edit deal", edit_deal_path(deal.id) %></td>
+		<td style="position:relative; left: 85%"><%= button_to "delete deal", deal, confirm: "You are about to delete this deal. Would you like to continue?", method: :delete %></td>
 	</tr>
 <% end %>
 
 <% @deals_med.each do |deal| %>
 	<tr>
-		<td class="med"><%= deal.Object_Name %></td>
-		<td class="med"><%= deal.price %></td>
-		<td class="med"><%= deal.User.name %></td>
-		<td><%= link_to "show deal", deal_path(deal.id) %></td>
-		<td><%= link_to "edit deal", edit_deal_path(deal.id) %></td>
-		<td><%= link_to "delete deal", deal, confirm: "You are about to delete this deal. Are you sure you want to do this?", method: :delete %></td>
+		<td class="med" style="position:relative; left: 10%"><%= deal.Object_Name %></td>
+		<td class="med" style="position:relative; left: 30%"><%= deal.price %></td>
+		<td class="med" style="position:relative; left: 50%"><%= deal.User.name %></td>
+		<td style="position:relative; left: 65%"><%= button_to "show deal", deal_path(deal.id) %></td>
+		<td style="position:relative; left: 75%"><%= button_to "edit deal", edit_deal_path(deal.id) %></td>
+		<td style="position:relative; left: 85%"><%= button_to "delete deal", deal, confirm: "You are about to delete this deal. Would you like to continue?", method: :delete %></td>
 	</tr>
 <% end %>
 
 <% @deals_low.each do |deal| %>
 	<tr>
-		<td class="low"><%= deal.Object_Name %></td>
-		<td class="low"><%= deal.price %></td>
-		<td class="low"><%= deal.User.name %></td>
-		<td><%= link_to "show deal", deal_path(deal.id) %></td>
-		<td><%= link_to "edit deal", edit_deal_path(deal.id) %></td>
-		<td><%= link_to "delete deal", deal, confirm: "You are about to delete this deal. Are you sure you want to do this?", method: :delete %></td>
+		<td class="low" style="position:relative; left: 10%"><%= deal.Object_Name %></td>
+		<td class="low" style="position:relative; left: 30%"><%= deal.price %></td>
+		<td class="low" style="position:relative; left: 50%"><%= deal.User.name %></td>
+		<td style="position:relative; left: 65%"><%= button_to "show deal", deal_path(deal.id) %></td>
+		<td style="position:relative; left: 75%"><%= button_to "edit deal", edit_deal_path(deal.id) %></td>
+		<td style="position:relative; left: 85%"><%= button_to "delete deal", deal, confirm: "You are about to delete this deal. Would you like to continue?", method: :delete %></td>
 	</tr>
 <% end %>
 </table>
+</body>

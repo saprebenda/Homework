@@ -33,6 +33,7 @@ class DealsController < ApplicationController
   end
 
   def index
+    @deal = Deal.new
     if user_signed_in?
       @deals_high = Deal.high_price
       @deals_med = Deal.med_price
