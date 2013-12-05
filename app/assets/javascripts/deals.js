@@ -1,17 +1,17 @@
 $(function(){
 	$(".high").hover(function(e){
-		$(e.target).closest(".high").css("background-color","red");
+		$(e.target).closest(".dpu").css("background-color","red");
 	}, function(){
-		$(".high").css("background-color","");
+		$(".dpu").css("background-color","");
 	});	
 	$(".med").hover(function(e){
-		$(e.target).closest(".med").css("background-color","green");
+		$(e.target).closest(".dpu").css("background-color","green");
 	}, function(){
-		$(".med").css("background-color","");
+		$(".dpu").css("background-color","");
 	});	
 	$(".low").hover(function(e){
-		$(e.target).closest(".low").css("background-color","yellow");
+		$(e.target).closest(".dpu").css("background-color","yellow");
 	}, function(){
-		$(".low").css("background-color", "")
+		$(".dpu").css("background-color", "")
 	});
 });

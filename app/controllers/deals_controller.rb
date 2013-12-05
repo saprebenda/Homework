@@ -40,7 +40,7 @@ class DealsController < ApplicationController
       @deals_low = Deal.low_price
       @deals = Deal.all
     else
-      @deals = []
+      redirect_to new_user_session_path
     end
   end
 

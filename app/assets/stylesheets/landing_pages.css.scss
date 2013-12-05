@@ -1,3 +1,13 @@
-// Place all the styles related to the LandingPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	background-color: #66ff99;
+	background-image: url("../assets/disposals.jpg");
+	background-size: 80px 80px;
+	background-repeat: repeat-x;
+	background-position: 0% 18%;
+	}
+
+h2 {
+	position: relative; 
+	left: 43%; 
+	top: 12px;
+}
