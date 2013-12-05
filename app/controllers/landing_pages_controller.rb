@@ -8,5 +8,7 @@ class LandingPagesController < ApplicationController
   end
   def product
   end
+  def about
+  end
 end
 

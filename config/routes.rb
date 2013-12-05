@@ -4,6 +4,7 @@ Jupiter::Application.routes.draw do
 resources :deals
   get "landing_pages/home"
   get "landing_pages/product"
+  get "landing_pages/about"
   root :to => 'landing_pages#home'
   
 
