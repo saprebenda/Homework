@@ -13,3 +13,24 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function(){
+    $('.accordion .accordion-toggle').each(function(){
+        $(this).html('<span class="plus">+</span>'+$(this).text());
+    });
+    $('.accordion a').on('click',function(){
+        var cur = $(this).children('.plus').text();
+        // set all to default state
+        $('.accordion a').children('.plus').text('+');
+        $('.accordion a').css({'color':'#666'});
+        // then, change style of current one        
+        if(cur=='+'){
+            $(this).children('.plus').text('-');
+            $(this).css({'color':'red'});
+        }
+        else{
+            $(this).children('.plus').text('+');
+            $(this).css({'color':'#666'});
+        }
+    });
+});

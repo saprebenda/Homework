@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'rails_admin'
 
 gem 'newrelic_rpm'
 
@@ -6,6 +7,7 @@ gem 'devise', '3.0'
 
 gem 'rails', '3.2.13'
 
+gem 'piggybak'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

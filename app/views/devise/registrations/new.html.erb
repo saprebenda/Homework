@@ -1,23 +1,23 @@
-<h2>Sign up</h2>
-
+<body>
+<h2 style="position: relative; left: 70%; top: 0%">Wanna Save Time?</h2>
+<h2 style="position: relative; left: 71%; top: 0%">Make An Account!</h2>
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
+  <div style="position: relative; left: 70%"><%= f.label :email %><br />
   <%= f.email_field :email, :autofocus => true %></div>
 
-  <div><%= f.label :password %><br />
+  <div style="position: relative; left: 70%"><%= f.label :password %><br />
   <%= f.password_field :password %></div>
 
-  <div><%= f.label :password_confirmation %><br />
+  <div style="position: relative; left: 70%"><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
 
-  <div>
-  	<%= f.label :name %><br />
-  	<%= f.text_field :name %>
+  <div style="position: relative; left: 70%">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
   </div>
 
-  <div style="position: relative; left: 34%"><%= f.submit "Sign up" %></div>
+  <div style="position: relative; left: 70%"><%= f.submit "Sign up!" %></div>
 <% end %>
-
-<%= render "devise/shared/links" %>
+</body>

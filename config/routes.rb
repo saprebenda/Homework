@@ -1,10 +1,18 @@
 Jupiter::Application.routes.draw do
+
+  devise_for :admins
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
+  mount Piggybak::Engine => '/checkout', :as => 'piggybak'
   devise_for :users
 
 resources :deals
   get "landing_pages/home"
   get "landing_pages/product"
   get "landing_pages/about"
+  get "landing_pages/recent"
+  get "landing_pages/order"
   root :to => 'landing_pages#home'
   
 

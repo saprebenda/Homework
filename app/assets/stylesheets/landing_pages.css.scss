@@ -1,13 +1,103 @@
-body {
-	background-color: #66ff99;
-	background-image: url("../assets/disposals.jpg");
-	background-size: 80px 80px;
-	background-repeat: repeat-x;
-	background-position: 0% 18%;
-	}
-
-h2 {
-	position: relative; 
-	left: 43%; 
-	top: 12px;
+#button1 {
+  border: 1px solid #00ff00;
+  color: #ff0000;
+  background: #fff000;
+  font-weight: bold;
+  font-size: 1em;
 }
+
+#navbar-header {
+    text-color: red;
+    font-weight: bold;
+    position: relative;
+    left: 2px;
+    top: 4px;
+}
+
+span2 {
+	margin-top: 4px;
+}
+
+#navtit {
+	color: red;
+}
+
+body {
+	background: linear-gradient(to bottom, blue, white) no-repeat;
+}
+
+.wrapperHeader {
+	background:url(../assets/recycle.jpg) no-repeat;
+	height: 50%;
+	background-size: 70px 56px;
+	margin-bottom: 0;
+	align: center;
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: #5A5A5A;
+}
+
+.navbar .nav > li > a {
+    float: none;
+    padding-top: 18px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color:  white;
+}
+
+#carousel-example-generic {
+	width: 50%;
+	height: 50%;
+	text-align: center;
+}
+
+#accordion {
+	height: 50%;
+	width: 50%;
+	position: fixed;
+	left: 2.5%;
+	text-align: center;
+}
+
+#collapseOne{
+	color: black;
+	background-color: #FF5050;
+}
+
+#collapseTwo {
+	color: black;
+	background-color: #FF5050;
+}
+
+#collapseThree {
+	color: black;
+	background-color: #FF5050;
+}
+
+#collapse1{
+	color: black;
+	background-color: #FF5050;
+}
+
+#collapse2 {
+	color: black;
+	background-color: #FF5050;
+}
+
+#collapse3 {
+	color: black;
+	background-color: #FF5050;
+}
+
+#SI {
+	position: relative;
+	left: 37%;
+}
+
+
+a:link {color:white;}      /* unvisited link */
+a:visited {color:white;}  /* visited link */
+a:hover {color:red;}  /* mouse over link */
+a:active {color:white;}  /* selected link */
