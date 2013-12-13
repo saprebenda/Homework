@@ -1,6 +1,4 @@
-Jupiter::Application.routes.draw do
-
-  
+Jupiter::Application.routes.draw do 
 
   devise_for :admins
 

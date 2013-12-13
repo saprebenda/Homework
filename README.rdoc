@@ -3,6 +3,18 @@ https://github.com/saprebenda/Homework
 
 DTC is a business Shane Prebenda is starting in China next February 2014. This site enables you to explore products that DTC sells (see "products" for details --> please note that the products are not real as I cannot trust you to keep my secrets :), understand more about how DTC started and who is involved (see "about us" for details --> this is in Chinese, but it effectively outlines who the main players are and has a picture carousel showing key players / business activities) and most importantly, DTC is founded on the idea of recycling. Thus, if you have purchased items from DTC in the past and wish to upgrade / trade in your item, there is a "Deals" page (for users only) where DTC resells customers' used products for discount. Last but not least, DTC is in the process of developing a products page where new products will appear for customers to buy and sell. This "Order Here!" portion of the site does not require you to be a member. Go make an account and give me your feedback!
 
+This site is fully functional both on local and heroku. Although certain functionalities are still being developed, there are no broken links / images / pages and the styling has been designed to make it easy on the eyes.
+
+This site includes 4 user validations for: username, password length, email format and password confirmation.
+
+In addition, this site uses 3 scopes (low, med, high) to divide up prices on the deals page and corresponding javascript hover-color functionalities (for further detail: go hover over various deal prices / names / users in the Deals page). These deals belongs_to users. Go look at deal.rb for more details.
+
+This site uses the NewRelic addon to monitor performance: https://addons.heroku.com/newrelic.
+
+This site uses gem devise for devise functionalities: http://rubygems.org/gems/devise, newrelic gem for a performance management system: http://rubygems.org/gems/newrelic_rpm, the standard rails gem: https://rubygems.org/gems/rails, and I am in the process of installing / utilizing the rails_admin gem and piggybak gem. However, since that portion of the site is still being built, I have not included them on my heroku, so please do not pay them any attention.
+
+This site has a user table with all necessary database resources, including @deals belongs_to (mentioned above). Thank you!
+
 Sincerely,
 
 The DTC Team
