@@ -50,15 +50,18 @@ body {
 #carousel-example-generic {
 	width: 50%;
 	height: 50%;
-	text-align: center;
+	left: 2.5%;
+	margin: 0;
+	padding: 0;
 }
 
 #accordion {
 	height: 50%;
 	width: 50%;
-	position: fixed;
-	left: 2.5%;
+	position: relative;
 	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
 #collapseOne{
@@ -95,7 +98,6 @@ body {
 	position: relative;
 	left: 37%;
 }
-
 
 a:link {color:white;}      /* unvisited link */
 a:visited {color:white;}  /* visited link */

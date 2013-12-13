@@ -1,8 +1,8 @@
 http://damp-basin-3806.herokuapp.com/
+https://github.com/saprebenda/Homework
 
-Added the Devise (authenticate) gem
+DTC is a business Shane Prebenda is starting in China next February 2014. This site enables you to explore products that DTC sells (see "products" for details --> please note that the products are not real as I cannot trust you to keep my secrets :), understand more about how DTC started and who is involved (see "about us" for details --> this is in Chinese, but it effectively outlines who the main players are and has a picture carousel showing key players / business activities) and most importantly, DTC is founded on the idea of recycling. Thus, if you have purchased items from DTC in the past and wish to upgrade / trade in your item, there is a "Deals" page (for users only) where DTC resells customers' used products for discount. Last but not least, DTC is in the process of developing a products page where new products will appear for customers to buy and sell. This "Order Here!" portion of the site does not require you to be a member. Go make an account and give me your feedback!
 
-Created the new heroku app (above)
+Sincerely,
 
-Added NewRelic Heroku addon
-(planning to add the Send Grid addon for final)
+The DTC Team

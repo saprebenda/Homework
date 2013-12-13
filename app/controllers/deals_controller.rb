@@ -26,7 +26,7 @@ class DealsController < ApplicationController
   def update
     @deal = Deal.find(params[:id])
     if @deal.update_attributes(params[:deal])
-      redirect_to deal_path(@deal.id)
+      redirect_to deals_path
     else
       render 'edit'
     end

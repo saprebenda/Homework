@@ -22,8 +22,8 @@
 		<td class="med" style="position:relative; left: 5%"><%= deal.Object_Name %></td>
 		<td class="med" style="position:relative; left: 25%"><%= deal.price %></td>
 		<td class="med" style="position:relative; left: 45%"><%= deal.User.name %></td>
-		<td style="position:relative; left: 60%"><%= button_to "show deal", deal_path(deal.id) %></td>
-		<td style="position:relative; left: 70%"><%= button_to "edit deal", edit_deal_path(deal.id) %></td>
+		<td style="position:relative; left: 60%"><%= button_to "show deal", deal_path(deal.id), method: :get %></td>
+		<td style="position:relative; left: 70%"><%= button_to "edit deal", edit_deal_path(deal.id), method: :get %></td>
 		<td style="position:relative; left: 80%"><%= button_to "delete deal", deal, confirm: "You are about to delete this deal. Would you like to continue?", method: :delete %></td>
 	</tr>
 <% end %>
@@ -33,8 +33,8 @@
 		<td class="low" style="position:relative; left: 5%"><%= deal.Object_Name %></td>
 		<td class="low" style="position:relative; left: 25%"><%= deal.price %></td>
 		<td class="low" style="position:relative; left: 45%"><%= deal.User.name %></td>
-		<td style="position:relative; left: 60%"><%= button_to "show deal", deal_path(deal.id) %></td>
-		<td style="position:relative; left: 70%"><%= button_to "edit deal", edit_deal_path(deal.id) %></td>
+		<td style="position:relative; left: 60%"><%= button_to "show deal", deal_path(deal.id), method: :get %></td>
+		<td style="position:relative; left: 70%"><%= button_to "edit deal", edit_deal_path(deal.id), method: :get %></td>
 		<td style="position:relative; left: 80%"><%= button_to "delete deal", deal, confirm: "You are about to delete this deal. Would you like to continue?", method: :delete %></td>
 	</tr>
 <% end %>
